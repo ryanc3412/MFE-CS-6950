@@ -10,7 +10,7 @@ const nextConfig = {
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
           // The key is the public name, the value is the path to your file
-          './HelloWorld': './components/HelloWorld.js', 
+          './SquareNumber': './components/SquareNumber.js', 
         },
         shared: {
           // Add any shared dependencies here

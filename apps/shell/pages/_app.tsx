@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import ShellLayout from "../components/ShellLayout";
 
 export default function App({
   Component,
@@ -7,5 +8,9 @@ export default function App({
   Component: React.ComponentType<any>;
   pageProps: any;
 }) {
-  return <Component {...pageProps} />;
+  return (
+    <ShellLayout>
+      <Component {...pageProps} />
+    </ShellLayout>
+  );
 }

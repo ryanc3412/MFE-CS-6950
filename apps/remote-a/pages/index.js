@@ -1,5 +1,5 @@
-import HelloWorld from "../components/HelloWorld";
+import SquareNumber from "../components/SquareNumber";
 
 export default function Home() {
-  return <HelloWorld />;
+  return <SquareNumber />;
 }

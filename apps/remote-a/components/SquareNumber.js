@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3002";
 
-export default function HelloWorld() {
+export default function SquareNumber() {
   const [value, setValue] = useState("");
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);

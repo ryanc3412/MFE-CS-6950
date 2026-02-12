@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 
-export default function RemoteHelloWorld() {
+export default function RemoteSquareNumber() {
   const [Component, setComponent] = useState<React.ComponentType | null>(null);
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
-    import("remote_a/HelloWorld")
+    import("remote_a/SquareNumber")
       .then((mod) => setComponent(() => mod.default))
       .catch(setError);
   }, []);
